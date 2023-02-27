@@ -98,6 +98,7 @@ class CapacitorGoogleMap(
 
                 bridge.webView.bringToFront()
                 bridge.webView.setBackgroundColor(Color.TRANSPARENT)
+                googleMap?.uiSettings?.isMapToolbarEnabled = false;
                 if (config.styles != null) {
                     googleMap?.setMapStyle(MapStyleOptions(config.styles!!))
                 }
